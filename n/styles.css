@@ -1,0 +1,151 @@
+ /* Options */
+:root{
+    --black:#1b1e23;
+    --size:350px;
+    --white: #f4eed7;
+    --feature : #4b9aaa;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width:100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 640px) {
+    body {
+      width:55vh;
+    }
+  }
+.clock{
+    border: 5px solid black;
+    height: var(--size);
+    width: var(--size);
+    border-radius: calc(var(--size)/2);
+    display: flex;
+    justify-content: center;
+    position:relative;
+    
+}
+.hour1{
+    position:absolute;
+    transform: rotate(30deg);
+
+}
+
+.hour2{
+    position: absolute;
+    transform: rotate(60deg);
+}
+.hour3{
+    position: absolute;
+    transform: rotate(90deg);
+}
+.hour4{
+    position: absolute;
+    transform: rotate(120deg);
+}
+.hour5{
+    position: absolute;
+    transform: rotate(150deg);
+}
+.hour6{
+    position: absolute;
+    transform: rotate(180deg);
+}
+.hour7{
+    position: absolute;
+    transform: rotate(210deg);
+}
+
+
+.hour8{
+    position: absolute;
+    transform: rotate(240deg);
+}
+.hour9{
+    position: absolute;
+    transform: rotate(270deg);
+}
+.hour10{
+    position: absolute;
+    transform: rotate(300deg);
+}
+.hour11{
+    position: absolute;
+    transform: rotate(330deg);
+}
+.hour12{
+    position: absolute;
+    transform: rotate(360deg);
+}
+.hours{
+    position: absolute;  
+    width: 100%;  
+    height: 100%;  
+    text-align: center;
+    color: red;
+}
+.hour-hand{
+    position: absolute;
+    height: calc(var(--size)/3 - 5px);
+    border:2px solid var(--white);
+    transform: translate(-50%,-50%);
+    left:50%;
+    bottom:50%;
+    transform-origin: 50% 100%;
+    
+}
+.minute-hand{
+    position: absolute;
+    height: calc(var(--size)/2.5 - 5px);
+    border:2px solid rgb(238, 118, 238);
+    transform: translate(-50%);
+    left:50%;
+    bottom:50%;
+    transform-origin: 50% 100%;
+}
+.second-hand{
+    position: absolute;
+    height: calc(var(--size)/2.1 - 5px);
+    border:2px solid rgb(0, 0, 0) ;
+    transform: translate(-50%);
+    left:50%;
+    bottom:50%;
+    transform-origin: 50% 100%;
+}
+.current-day{
+    position:absolute;
+    top:22%;
+    color: var(--white);
+    font-size: 10%;
+}
+
+.current-hour{
+    transition: translate();
+    position: absolute;
+    bottom: 22%;
+    color: var(--white);
+    transform: translate(-120%);
+}
+.current-minutes{ 
+    bottom: 22%;
+    position: absolute;
+    color: var(--white);  
+    /* transform: translate(110%); */
+}
+.current-seconds{
+    bottom: 22%;
+    position: absolute;
+    color: var(--white);  
+    transform: translate(170%);
+}
+
