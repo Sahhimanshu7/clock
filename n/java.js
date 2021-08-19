@@ -17,9 +17,14 @@ function clockRotating(){
 
     document.querySelector(".current-day").innerHTML=date.toDateString(); 
     document.querySelector(".current-hour").innerHTML=date.getHours()+" : ";
-    document.querySelector(".current-minutes").innerHTML=date.getMinutes()+" : ";
+    
+    if(date.getMinutes()<10){
+        document.querySelector(".current-minutes").innerHTML="0" + date.getMinutes()+" : ";
+    }else{
+        document.querySelector(".current-minutes").innerHTML=date.getMinutes()+" : ";
+    }
     if(date.getSeconds()<10){
-        document.querySelector(".current-seconds").innerHTML="0"+date.getSeconds();
+        document.querySelector(".current-seconds").innerHTML="0" + date.getSeconds();
     }else{
         document.querySelector(".current-seconds").innerHTML=date.getSeconds();
     }

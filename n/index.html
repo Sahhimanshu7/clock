@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clock</title>
+    <meta name="description" content="Countdown, Clock, 
+    Time, ">
+    <meta name="author" content="Himanshu Sah">
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/8.9.1/firebase-app.js"></script>
@@ -31,15 +34,21 @@
           <div class="hour-hand"></div>
           <div class="minute-hand"></div>
           <div class="second-hand"></div>
+          <div class="count-hand"></div>
         </div>
         <div class="hours hour1">1</div>
         <div class="hours hour2">2</div>
         <div class="hours hour3">3</div>
-        <div class="hours hour4">4</div>
-        <div class="hours hour5">5</div>
-        <div class="hours hour6">6</div>
-        <div class="hours hour7">7</div>
-        <div class="hours hour8">8</div>
+        <div class="hours hour4">
+          <p class="flipnumber">4</p></div>
+        <div class="hours hour5">
+          <p class="flipnumber5">5</p></div>
+        <div class="hours hour6">
+          <p class="flipnumber6">6</p></div>
+        <div class="hours hour7">
+          <p class="flipnumber7">7</p></div>
+        <div class="hours hour8">
+          <p class="flipnumber8">8</p></div>
         <div class="hours hour9">9</div>
         <div class="hours hour10">10</div>
         <div class="hours hour11">11</div>
@@ -47,8 +56,186 @@
 
         
       </div>
-      
+      <div class="buttons">
+        <!-- <button class="setAlarm">Set Alarm</buttom> -->
+        <button class="setCountdown">Countdown</buttom>
+      </div>
+      <div class="setAlarmTime">
+        <div class="heading">
+          <h1>Hours</h1>
+          <h1>Minutes</h1>
+          <h1>Seconds</h1>
+        </div>
+        <div class="setTime">
+        <div class="setHours">
+          <select class="Hours" name="Hours">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>  
+          </select>
+        </div>
+        <div class="setMinutes">
+          <select class="Minutes" name="Minutes">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option> 
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option> 
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+
+          </select>
+        </div>
+        <div class="setSeconds">
+          <select class="Seconds" name="Seconds">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option> 
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+            <option value="32">32</option>
+            <option value="33">33</option>
+            <option value="34">34</option>
+            <option value="35">35</option>
+            <option value="36">36</option>
+            <option value="37">37</option>
+            <option value="38">38</option>
+            <option value="39">39</option>
+            <option value="40">40</option>
+            <option value="41">41</option>
+            <option value="42">42</option>
+            <option value="43">43</option>
+            <option value="44">44</option>
+            <option value="45">45</option>
+            <option value="46">46</option>
+            <option value="47">47</option> 
+            <option value="48">48</option>
+            <option value="49">49</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="52">52</option>
+            <option value="53">53</option>
+            <option value="54">54</option>
+            <option value="55">55</option>
+            <option value="56">56</option>
+            <option value="57">57</option>
+            <option value="58">58</option>
+            <option value="59">59</option>
+            <option value="60">60</option>
+
+          </select>
+        </div>
+       
+        </div>
+        <button class="done">Done</button>
+      </div>
+      <div class="count-down"></div>
     </div>
     <script src="java.js"></script>
+  
+    <script src="dataBase.js"></script>
+    
   </body>
 </html>
